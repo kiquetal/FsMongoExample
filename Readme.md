@@ -23,6 +23,24 @@ Once the database is running, you can start the F# application:
 dotnet run
 ```
 
+### 3. Build an Executable
+To create a release-ready executable, you can use the provided build script or the .NET CLI directly.
+
+**Using the script:**
+```bash
+./build.sh
+```
+
+**Using the .NET CLI:**
+```bash
+dotnet publish -c Release -o ./publish
+```
+
+The executable and dependencies will be placed in the `./publish` directory. You can run it with:
+```bash
+./publish/FsMongoExample
+```
+
 ## Features (Current)
 - Connection to a MongoDB instance with authentication.
 - Verification of the connection via a "ping" command.
